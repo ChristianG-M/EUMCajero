@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="colorlib.com">
+    <meta name="author" content="ChristianGM">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form</title>
-
+    <title>Cajero</title>
+    {% load static %}
     <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="{% static 'insertTicket/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'insertTicket/style.css' %}">
 </head>
 <body>
 
     <div class="main">
         <div class="container">
             <div>
-                <img src="images/logo_transparent.png" alt="" style="height:150px; float: left">
+                <img src="{% static 'insertTicket/images/logo_transparent.png' %}" alt="" style="height:150px; float: left">
             </div>
             <div class="card card-upper">
-                <img src="images/services.png" alt="" style="height:65px; float: left; margin-top:30px; margin-left:20px">
+                <img src="{% static 'insertTicket/images/services.png' %}" alt="" style="height:65px; float: left; margin-top:30px; margin-left:20px">
                 <h2 style="margin-top:45px">Servicios</h2>
             </div>
             <div class="card card-middle">
-                <img src="images/card.png" alt="" style="height:105px; float: left; margin-top:10px; margin-left:20px">
+                <img src="{% static 'insertTicket/images/card.png' %}" alt="" style="height:105px; float: left; margin-top:10px; margin-left:20px">
                 <h2 style="margin-top:25px">Recarga de Tarjeta</h2>
             </div>
             <div class="card card-bottom">
-                <img src="images/consulta.png" alt="" style="height:105px; float: left; margin-top:15px; margin-left:20px">
+                <img src="{% static 'insertTicket/images/consulta.png' %}" alt="" style="height:105px; float: left; margin-top:15px; margin-left:20px">
                 <h2 style="margin-top:45px">Consultar</h2>
             </div>
             <div class="vl"></div>
             <div class="image image-bottom-right">
-                <img src="images/cajero-con-billete.gif" alt="" style="height:500px;">
+                <img src="{% static 'insertTicket/images/cajero-con-billete.gif' %}" alt="" style="height:500px;">
                 <p class="insert-ticket">Inserte<br/>Ticket</p>
                 <p class="service">Pago de <br/>Estacionamiento</p>
             </div>
@@ -46,10 +46,10 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'insertTicket/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'insertTicket/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'insertTicket/vendor/jquery-validation/dist/additional-methods.min.js' %}"></script>
+    <script src="{% static 'insertTicket/vendor/jquery-steps/jquery.steps.min.js' %}"></script>
+    <script src="{% static 'insertTicket/js/main.js' %}"></script>
 </body>
 </html>
