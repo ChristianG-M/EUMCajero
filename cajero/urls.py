@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from hook.urls import hook_patterns
+
 
 urlpatterns = [
     #Paths de insertTicket
     path('', include('insertTicket.urls')),
     #Paths del Admin
     path('admin/', admin.site.urls),
+    path('', include(hook_patterns)),
 ]

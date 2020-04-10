@@ -12,10 +12,10 @@
             <link rel="stylesheet" href="{% static 'insertTicket/css/style.css' %}">
         </head>
         <body>
-            <div class="tabs">
-                <div class="tab">
-                    <input type="radio" id="tab-4" name="tab-group-2" checked>
-                    <label for="tab-4">Cajero</label>
+            <div id="tabs" class="tabs">
+                <div id="tab-1" class="tab">
+                    <input type="radio" id="tab-4" name="tab-group-2" >
+                    <label id="t1" for="tab-4">Cajero</label>
                     <div class="content">
                         <div class="container">
                             <div>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab">
+                <div id="tab-2" class="tab">
                     <input type="radio" id="tab-5" name="tab-group-2">
                     <label for="tab-5">Cobro</label>
                     <div class="content">
@@ -57,25 +57,25 @@
                             <table class="cobro">
                                 <tr>
                                     <td class="cobro-td">Ingreso</td>
-                                    <td class="cobro-td">14:20:00</td>
+                                    <td id="hora_entrada" class="cobro-td">14:20:00</td>
                                 </tr>
                                 <tr>
                                     <td class="cobro-td">Estancia</td>
-                                    <td class="cobro-td">00:40:00</td>
+                                    <td id="tiempo_total" class="cobro-td">00:40:00</td>
                                 </tr>
                                 <tr>
                                     <td class="cobro-td">Descuento</td>
-                                    <td class="cobro-td">$ 0.00</td>
+                                    <td id="descuento" class="cobro-td">$ 0.00</td>
                                 </tr>
                             </table>
                             <table class="total-cobro">
                                 <tr class="total-cobro-tr">
                                     <td class="total-cobro-td">Total</td>
-                                    <td class="total-cobro-td">$ 20.00</td>
+                                    <td id="monto_ingresar" class="total-td">$ 20.00</td>
                                 </tr>
                                 <tr class="total-cobro-tr">
                                     <td class="total-cobro-td">Ingresado</td>
-                                    <td class="total-cobro-td">$ 10.00</td>
+                                    <td id="monto_ingresado" class="ingresado-td">$ 10.00</td>
                                 </tr>
                             </table>
                             <div class="vl"></div>
@@ -84,8 +84,8 @@
                                 <p class="insert-ticket">Inserte<br/>Dinero</p>
                                 <p class="service">Pago de <br/>Estacionamiento</p>
                             </div>
-                            <div class="card-not-ticket">
-                                Sin Cambio
+                            <div id="monto_ingresado" class="card-not-ticket">
+                                Cambio: 0
                             </div>
                             <p class="date">14:29, 23 de marzo de 2019</p>
                         </div>
@@ -97,5 +97,6 @@
             <script src="{% static 'insertTicket/vendor/jquery-validation/dist/additional-methods.min.js' %}"></script>
             <script src="{% static 'insertTicket/vendor/jquery-steps/jquery.steps.min.js' %}"></script>
             <script src="{% static 'insertTicket/js/main.js' %}"></script>
+            <script src="{% static 'insertTicket/js/ws2.js' %}"></script>
         </body>
     </html>
